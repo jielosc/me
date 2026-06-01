@@ -13,16 +13,16 @@ const siteConfig = {
   },
 
   awards: [
-    { title: "Silver Medal", event: "ICPC Asia Regional (Hangzhou)", date: "2024.10" },
     { title: "Outstanding Winner & ASA Award", event: "MCM", date: "2026.01" },
+    { title: "Silver Medal", event: "ICPC Asia Regional (Hangzhou)", date: "2024.10" },
   ],
 
   research: {
     title: "Video Transmission Optimization in Multimodal LLM Real-time Communication",
     period: "2026.03 — Present",
     points: [
-      "Led research on latency optimization for real-time video transmission in multimodal LLM scenarios, investigating the impact of adaptive frame rate strategies on end-to-end inference latency and semantic fidelity",
-      "Built the entire infrastructure from scratch, including model inference service deployment, data pipeline construction, and end-to-end integration",
+      "Explored adaptive frame rate strategies to reduce end-to-end latency in real-time video transmission for multimodal LLMs",
+      "Built the full infrastructure from scratch: model inference service, data pipeline, and end-to-end integration",
     ],
   },
 

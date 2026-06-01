@@ -1,10 +1,21 @@
 :root {
   --bg: #fff;
+  --bg-card: #fff;
   --text: #111;
   --text-soft: #666;
   --border: #e5e5e5;
   --font: "Inter", system-ui, sans-serif;
   --max: 1024px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --bg-card: #1a1a1a;
+    --text: #e5e5e5;
+    --text-soft: #999;
+    --border: #2a2a2a;
+  }
 }
 
 *, *::before, *::after {
@@ -275,7 +286,7 @@ a:hover {
 }
 
 .project-card:hover {
-  border-color: #bbb;
+  border-color: var(--text-soft);
 }
 
 .project-head {

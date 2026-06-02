@@ -47,6 +47,11 @@ const siteConfig = {
 
   contacts: [
     {
+      label: "Email",
+      value: "Hi@icelon.top",
+      href: "mailto:Hi@icelon.top",
+    },
+    {
       label: "GitHub",
       value: "jielosc",
       href: "https://github.com/jielosc",
@@ -159,8 +164,8 @@ const renderContacts = () => {
         <span class="contact-label">${c.label}</span>
         ${
           c.href
-            ? `<a href="${c.href}" target="_blank" rel="noreferrer">${c.value}</a>`
-            : `<span>${c.value}</span>`
+            ? `<a class="contact-value" href="${c.href}" target="_blank" rel="noreferrer">${c.value}</a>`
+            : `<span class="contact-value">${c.value}</span>`
         }
       </div>
     `

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://icelon.top/sitemap.xml

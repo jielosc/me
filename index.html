@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Liu | Multimodal LLMs &amp; AI Systems</title>
+    <title>Ryan Liu | Building Useful AI Systems</title>
     <meta
       name="description"
-      content="Ryan Liu is an undergraduate at Central South University working on efficient multimodal systems, real-time video MLLMs, and AI agents."
+      content="Ryan Liu builds useful AI systems, from open-source information tools to reproducible multimodal model evaluation."
     />
     <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
@@ -14,10 +14,10 @@
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ryan Liu | Multimodal LLMs &amp; AI Systems" />
+    <meta property="og:title" content="Ryan Liu | Building Useful AI Systems" />
     <meta
       property="og:description"
-      content="Undergraduate researcher building efficient multimodal systems and AI agents."
+      content="Building useful AI systems. Open-source tools, multimodal AI, and model evaluation."
     />
     <meta property="og:url" content="https://icelon.top/" />
     <meta name="twitter:card" content="summary" />
@@ -37,7 +37,7 @@
       }
     </script>
 
-    <link rel="stylesheet" href="./styles.css?v=20260907-3" />
+    <link rel="stylesheet" href="./styles.css?v=20261021-1" />
     <script src="./script.js?v=20260907-2" defer></script>
   </head>
   <body>
@@ -47,34 +47,34 @@
       <header class="header">
         <a class="site-mark" href="./" aria-label="Ryan Liu, home">Ryan Liu</a>
         <nav class="header-nav" aria-label="Primary navigation">
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#awards">Awards</a>
+          <a href="#work">Work</a>
+          <a href="#writing">Writing</a>
+          <a href="#education">Education</a>
           <a href="#about">About</a>
         </nav>
       </header>
 
       <div class="layout">
         <aside class="sidebar" aria-label="Profile">
-          <p class="eyebrow">Multimodal systems · AI agents</p>
+          <p class="eyebrow">AI · Open source · Engineering</p>
           <h1>Ryan Liu</h1>
+          <p class="sidebar-tagline">Building useful AI systems.</p>
           <p class="sidebar-intro">
-            Undergraduate in Information and Computing Science at Central South University.
-            I build efficient multimodal systems, with current work on adaptive visual input
-            and inference for real-time video MLLMs.
+            Interested in multimodal AI, agents, and model evaluation.
+            I turn ideas into experiments and tools people can use.
           </p>
 
           <div class="profile-block">
-            <h2>Research interests</h2>
+            <h2>Interests</h2>
             <ul class="plain-list interest-list">
               <li>Multimodal LLMs</li>
-              <li>Efficient inference</li>
+              <li>Model evaluation</li>
               <li>AI agents</li>
             </ul>
           </div>
 
           <div class="profile-block">
-            <h2>Contact</h2>
+            <h2>Find me online</h2>
             <ul class="plain-list contact-list">
               <li>
                 <span>Email</span>
@@ -84,138 +84,104 @@
                 <span>GitHub</span>
                 <a href="https://github.com/jielosc" target="_blank" rel="noreferrer">jielosc</a>
               </li>
+              <li>
+                <span>Blog</span>
+                <a href="https://blogs.icelon.top/" target="_blank" rel="noreferrer">Notes &amp; writing ↗</a>
+              </li>
             </ul>
           </div>
         </aside>
 
         <main class="main-content" id="main-content">
-          <section class="section" id="research" aria-labelledby="research-title">
+          <section class="section" id="work" aria-labelledby="work-title">
             <div class="section-heading">
               <p class="section-index">01</p>
-              <h2 id="research-title">Selected research</h2>
+              <h2 id="work-title">Selected Work</h2>
             </div>
 
-            <article class="research-entry research-entry--featured">
-              <div class="entry-heading">
-                <div>
-                  <h3>Adaptive Visual Input for Real-time Video MLLMs</h3>
+            <div class="work-list">
+              <article class="work-card work-card--featured">
+                <p class="entry-kicker">Open source · Information extraction</p>
+                <h3>CS Baoyan Chat Daily</h3>
+                <p class="work-subtitle">Useful information, out of busy group chats.</p>
+                <p>
+                  An LLM-powered tool that turns CS graduate admissions discussions into
+                  structured daily digests, helping readers find application information
+                  and follow the conversation without reading every message.
+                </p>
+                <p>
+                  Combines anonymization, evidence-linked extraction, and structured
+                  summaries in a pipeline others can deploy themselves.
+                </p>
+                <div class="entry-links">
+                  <a href="https://csbaoyan.icelon.top" target="_blank" rel="noreferrer">Browse past digests <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/jielosc/csbaoyan-chat-daily" target="_blank" rel="noreferrer" title="78 stars as of October 21, 2026">78 GitHub stars <span aria-hidden="true">↗</span></a>
                 </div>
-                <time datetime="2026-03">Mar 2026 — Present</time>
-              </div>
+                <p class="work-note">The public digest is now an archive; the generation tool remains available for self-hosting.</p>
+              </article>
 
-              <p class="entry-lead">
-                Studying how frame rate, resolution, and scene dynamics affect motion
-                understanding and model latency in real-time multimodal systems.
-              </p>
-
-              <div class="metric-grid" aria-label="Research scope">
-                <div class="metric">
-                  <strong>2,000+</strong>
-                  <span>MotionBench QA samples</span>
+              <article class="work-card">
+                <p class="entry-kicker">Evaluation · Multimodal AI</p>
+                <h3>RTV-Eval</h3>
+                <p class="work-subtitle">Reproducible experiments for video-language models.</p>
+                <p>
+                  How much visual input does a model need? I built an evaluation framework
+                  to compare frame sampling, resolution, and content-adaptive strategies
+                  under controlled configurations.
+                </p>
+                <p>
+                  The pipeline retains raw responses, validates answers, and checkpoints
+                  results in SQLite, making experiments resumable and their results easier
+                  to inspect and analyze.
+                </p>
+                <div class="entry-links">
+                  <a href="https://github.com/jielosc/rtv-eval" target="_blank" rel="noreferrer">Explore the framework <span aria-hidden="true">↗</span></a>
                 </div>
-                <div class="metric">
-                  <strong>2 models</strong>
-                  <span>Qwen2.5-VL-7B · InternVL3-8B</span>
-                </div>
-                <div class="metric">
-                  <strong>Full pipeline</strong>
-                  <span>Sampling · inference · analysis</span>
-                </div>
-              </div>
+                <p class="work-note">Offline evaluation of video input strategies; not an end-to-end real-time streaming benchmark.</p>
+              </article>
 
-              <ul class="detail-list">
-                <li>
-                  Built RTV-Eval, a reproducible evaluation framework with video sampling,
-                  MLLM inference, answer parsing, SQLite checkpointing, and batched
-                  model-by-strategy experiments.
-                </li>
-                <li>
-                  Designed an adaptive upload strategy using low-resolution frame difference
-                  and SSIM to adjust frame rate, resolution, and keyframes to scene dynamics.
-                </li>
-                <li>
-                  In a preliminary 50-question StreamingBench evaluation, improved accuracy
-                  from 66% to 74% while reducing model TTFT from 335.8 ms to 286.9 ms against
-                  a fixed low-frame-rate baseline.
-                </li>
-              </ul>
-
-              <div class="entry-links">
-                <a href="https://github.com/jielosc/rtv-eval" target="_blank" rel="noreferrer">
-                  View code <span aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </article>
-
-            <article class="research-entry">
-              <div class="entry-heading">
-                <div>
-                  <p class="entry-kicker">Provincial student innovation project</p>
-                  <h3>Multimodal LLMs for Cultural Tourism</h3>
+              <article class="work-card">
+                <p class="entry-kicker">AI application · Automation</p>
+                <h3>EigenDigest</h3>
+                <p class="work-subtitle">From scattered sources to a readable digest.</p>
+                <p>
+                  An information bot that brings RSS feeds, web articles, and public-account
+                  content into one workflow. It removes duplicates, generates concise
+                  summaries with an LLM, and delivers scheduled subscription digests.
+                </p>
+                <div class="entry-links">
+                  <a href="https://github.com/jielosc/EigenDigest_bot" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
                 </div>
-                <time datetime="2024-04">Apr 2024 — May 2025</time>
-              </div>
-              <p>
-                Led local deployment and scenario evaluation of open-source multimodal models.
-                Built a vector-search and RAG pipeline for a tourism knowledge base, then
-                developed a prototype spanning visual recognition, retrieval, and response
-                generation.
-              </p>
-            </article>
+              </article>
+            </div>
           </section>
 
-          <section class="section" id="projects" aria-labelledby="projects-title">
+          <section class="section" id="writing" aria-labelledby="writing-title">
             <div class="section-heading">
               <p class="section-index">02</p>
-              <h2 id="projects-title">Selected projects</h2>
+              <h2 id="writing-title">Writing</h2>
             </div>
-
-            <div class="project-grid">
-              <article class="project-card">
-                <div class="project-heading">
-                  <h3>csbaoyan-chat-daily</h3>
-                  <span>Open source</span>
-                </div>
-                <p class="project-stack">Python · LLM · GitHub Pages</p>
-                <p>
-                  An LLM-powered pipeline that normalizes, de-identifies, clusters,
-                  deduplicates, and summarizes group chats into scheduled, multi-platform
-                  daily digests.
-                </p>
-                <div class="entry-links">
-                  <a href="https://csbaoyan.icelon.top" target="_blank" rel="noreferrer">
-                    Live site <span aria-hidden="true">↗</span>
-                  </a>
-                  <a href="https://github.com/jielosc/csbaoyan-chat-daily" target="_blank" rel="noreferrer">
-                    Code <span aria-hidden="true">↗</span>
-                  </a>
-                </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-heading">
-                  <h3>EigenDigest Bot</h3>
-                  <span>Open source</span>
-                </div>
-                <p class="project-stack">Python · RSS · LLM</p>
-                <p>
-                  A multi-source information bot that collects RSS, web, and public-account
-                  content, removes duplicates, generates concise summaries, and delivers
-                  scheduled subscription digests.
-                </p>
-                <div class="entry-links">
-                  <a href="https://github.com/jielosc/EigenDigest_bot" target="_blank" rel="noreferrer">
-                    Code <span aria-hidden="true">↗</span>
-                  </a>
-                </div>
-              </article>
+            <div class="about-copy">
+              <p>Notes on AI, engineering, experiments, and things I'm learning.</p>
+            </div>
+            <div class="entry-links">
+              <a href="https://blogs.icelon.top/" target="_blank" rel="noreferrer">Read my blog <span aria-hidden="true">↗</span></a>
             </div>
           </section>
 
-          <section class="section" id="awards" aria-labelledby="awards-title">
+          <section class="section" id="education" aria-labelledby="education-title">
             <div class="section-heading">
               <p class="section-index">03</p>
-              <h2 id="awards-title">Selected honors</h2>
+              <h2 id="education-title">Education &amp; Honors</h2>
+            </div>
+
+            <div class="education-entry">
+              <div>
+                <h3>Central South University</h3>
+                <p>School of Mathematics and Statistics</p>
+                <p>B.S. in Information and Computing Science</p>
+              </div>
+              <time datetime="2023-09">Sep 2023 — Jun 2027</time>
             </div>
 
             <ul class="award-list">
@@ -228,24 +194,10 @@
               </li>
               <li>
                 <div>
-                  <strong>National Second Prize</strong>
-                  <span>China Undergraduate Mathematical Contest in Modeling</span>
-                </div>
-                <time datetime="2025-09">2025</time>
-              </li>
-              <li>
-                <div>
                   <strong>National Scholarship</strong>
                   <span>Ministry of Education of China</span>
                 </div>
                 <time datetime="2025">2024–2025</time>
-              </li>
-              <li>
-                <div>
-                  <strong>Provincial First Prize</strong>
-                  <span>National College Students Market Survey &amp; Analysis Competition</span>
-                </div>
-                <time datetime="2025-04">2025</time>
               </li>
               <li>
                 <div>
@@ -257,37 +209,21 @@
             </ul>
           </section>
 
-          <section class="section" id="education" aria-labelledby="education-title">
-            <div class="section-heading">
-              <p class="section-index">04</p>
-              <h2 id="education-title">Education</h2>
-            </div>
-
-            <div class="education-entry">
-              <div>
-                <h3>Central South University</h3>
-                <p>School of Mathematics and Statistics</p>
-                <p>B.S. in Information and Computing Science</p>
-              </div>
-              <time datetime="2023-09">Sep 2023 — Jun 2027</time>
-            </div>
-          </section>
-
           <section class="section" id="about" aria-labelledby="about-title">
             <div class="section-heading">
-              <p class="section-index">05</p>
+              <p class="section-index">04</p>
               <h2 id="about-title">About</h2>
             </div>
 
             <div class="about-copy">
               <p>
-                I enjoy turning research questions into reproducible experiments and working
-                systems. My current toolkit includes Python, C/C++, PyTorch, Transformers,
-                RAG, Git, and Linux.
+                I like working on problems where AI can make everyday information easier
+                to use. That means building the whole path from a model's output to a
+                tool that fits into someone's day.
               </p>
               <p>
-                Outside research, I enjoy programming, gaming, music, table tennis, and
-                following frontier technology.
+                I also enjoy the experimental side: asking what actually works, checking
+                the evidence, and making the process reproducible enough for others to build on.
               </p>
             </div>
           </section>

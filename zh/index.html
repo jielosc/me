@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Liu | 构建实用的 AI 系统</title>
+    <meta
+      name="description"
+      content="Ryan Liu 的个人主页：构建实用的 AI 系统，探索开源信息工具、多模态 AI 与可复现的模型评测。"
+    />
+    <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://icelon.top/zh/" />
+    <link rel="alternate" hreflang="en" href="https://icelon.top/en/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://icelon.top/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://icelon.top/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ryan Liu | 构建实用的 AI 系统" />
+    <meta
+      property="og:description"
+      content="构建实用的 AI 系统。开源工具、多模态 AI 与模型评测。"
+    />
+    <meta property="og:url" content="https://icelon.top/zh/" />
+    <meta name="twitter:card" content="summary" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ryan Liu",
+        "url": "https://icelon.top/",
+        "email": "mailto:hi@icelon.top",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Central South University"
+        },
+        "sameAs": ["https://github.com/jielosc"]
+      }
+    </script>
+
+    <link rel="stylesheet" href="/styles.css?v=20261021-2" />
+    <script src="/script.js?v=20261021-2" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+
+    <div class="shell">
+      <header class="header">
+        <a class="site-mark" href="./" aria-label="Ryan Liu，首页">Ryan Liu</a>
+        <nav class="header-nav" aria-label="主导航">
+          <a href="#work">作品</a>
+          <a href="#writing">写作</a>
+          <a href="#education">教育</a>
+          <a href="#about">关于</a>
+        </nav>
+        <nav class="language-nav" aria-label="语言切换">
+          <a href="/en/" lang="en" hreflang="en" data-language="en">EN</a>
+          <a href="/zh/" lang="zh-CN" hreflang="zh-CN" data-language="zh" aria-current="page">中文</a>
+        </nav>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar" aria-label="个人简介">
+          <p class="eyebrow">AI · 开源 · 工程</p>
+          <h1>Ryan Liu</h1>
+          <p class="sidebar-tagline">构建实用的 AI 系统。</p>
+          <p class="sidebar-intro">关注多模态 AI、智能体与模型评测，把想法变成可验证的实验和真正用得上的工具。</p>
+
+          <div class="profile-block">
+            <h2>关注方向</h2>
+            <ul class="plain-list interest-list">
+              <li>多模态大模型</li>
+              <li>模型评测</li>
+              <li>AI 智能体</li>
+            </ul>
+          </div>
+
+          <div class="profile-block">
+            <h2>找到我</h2>
+            <ul class="plain-list contact-list">
+              <li>
+                <span>邮箱</span>
+                <a href="mailto:hi@icelon.top">hi@icelon.top</a>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a href="https://github.com/jielosc" target="_blank" rel="noreferrer">jielosc</a>
+              </li>
+              <li>
+                <span>博客</span>
+                <a href="https://blogs.icelon.top/" target="_blank" rel="noreferrer">笔记与写作 ↗</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <main class="main-content" id="main-content">
+          <section class="section" id="work" aria-labelledby="work-title">
+            <div class="section-heading">
+              <p class="section-index">01</p>
+              <h2 id="work-title">精选作品</h2>
+            </div>
+
+            <div class="work-list">
+              <article class="work-card work-card--featured">
+                <p class="entry-kicker">开源 · 信息提取</p>
+                <h3>绿群日报</h3>
+                <p class="work-subtitle">从热闹的群聊中，找到有用的信息。</p>
+                <p>面向计算机保研场景的 AI 日报工具，将群聊讨论整理成结构化日报，帮助读者快速了解申请信息、经验与讨论脉络。</p>
+                <p>将匿名化处理、可追溯的信息提取与结构化摘要串成完整流程，支持自行部署和使用。</p>
+                <div class="entry-links">
+                  <a href="https://csbaoyan.icelon.top" target="_blank" rel="noreferrer">浏览历史日报<span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/jielosc/csbaoyan-chat-daily" target="_blank" rel="noreferrer" title="截至 2026 年 10 月 21 日，78 个 Star">78 个 GitHub Star<span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="work-note">公开日报已停止更新，历史内容仍可浏览；生成工具可自行部署使用。</p>
+              </article>
+
+              <article class="work-card">
+                <p class="entry-kicker">模型评测 · 多模态 AI</p>
+                <h3>RTV-Eval</h3>
+                <p class="work-subtitle">让视频多模态模型的实验可复现。</p>
+                <p>模型究竟需要多少视觉输入？我构建了一个评测框架，在受控配置下比较帧采样、分辨率与内容自适应策略。</p>
+                <p>框架保留原始回答、校验答案，并通过 SQLite 保存检查点，让实验可以断点续跑，结果也更便于检查与分析。</p>
+                <div class="entry-links">
+                  <a href="https://github.com/jielosc/rtv-eval" target="_blank" rel="noreferrer">查看评测框架<span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="work-note">用于视频输入策略的离线评测，不代表端到端实时流式性能。</p>
+              </article>
+
+              <article class="work-card">
+                <p class="entry-kicker">AI 应用 · 自动化</p>
+                <h3>EigenDigest</h3>
+                <p class="work-subtitle">把分散的信息，整理成易读的摘要。</p>
+                <p>信息聚合机器人，将 RSS、网页文章与公众号内容接入统一流程，完成去重、LLM 摘要生成和订阅内容的定时推送。</p>
+                <div class="entry-links">
+                  <a href="https://github.com/jielosc/EigenDigest_bot" target="_blank" rel="noreferrer">在 GitHub 查看<span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="writing" aria-labelledby="writing-title">
+            <div class="section-heading">
+              <p class="section-index">02</p>
+              <h2 id="writing-title">写作</h2>
+            </div>
+            <div class="about-copy">
+              <p>记录 AI、工程实践、实验，以及正在学习的事。</p>
+            </div>
+            <div class="entry-links">
+              <a href="https://blogs.icelon.top/" target="_blank" rel="noreferrer">阅读博客<span aria-hidden="true">↗</span></a>
+            </div>
+          </section>
+
+          <section class="section" id="education" aria-labelledby="education-title">
+            <div class="section-heading">
+              <p class="section-index">03</p>
+              <h2 id="education-title">教育与荣誉</h2>
+            </div>
+
+            <div class="education-entry">
+              <div>
+                <h3>中南大学</h3>
+                <p>数学与统计学院</p>
+                <p>信息与计算科学 · 本科</p>
+              </div>
+              <time datetime="2023-09">2023 年 9 月 — 2027 年 6 月</time>
+            </div>
+
+            <ul class="award-list">
+              <li>
+                <div>
+                  <strong>特等奖（Outstanding Winner）与 ASA 奖</strong>
+                  <span>美国大学生数学建模竞赛（MCM）</span>
+                </div>
+                <time datetime="2026-01">2026</time>
+              </li>
+              <li>
+                <div>
+                  <strong>国家奖学金</strong>
+                  <span>中华人民共和国教育部</span>
+                </div>
+                <time datetime="2025">2024–2025</time>
+              </li>
+              <li>
+                <div>
+                  <strong>银牌</strong>
+                  <span>ICPC 亚洲区域赛 · 杭州</span>
+                </div>
+                <time datetime="2024-10">2024</time>
+              </li>
+            </ul>
+          </section>
+
+          <section class="section" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+              <p class="section-index">04</p>
+              <h2 id="about-title">关于</h2>
+            </div>
+
+            <div class="about-copy">
+              <p>我喜欢解决那些能让日常信息更好用的问题。从模型输出到能融入日常使用的工具，我享受把这条路径完整做出来的过程。</p>
+              <p>我也喜欢实验本身：弄清什么真正有效，检查证据，并让过程可复现，方便他人在此基础上继续探索。</p>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="footer-year">2026</span> Ryan Liu</span>
+        <span>使用原生 HTML 与 CSS 构建。</span>
+      </footer>
+    </div>
+  </body>
+</html>

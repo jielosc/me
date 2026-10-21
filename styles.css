@@ -545,3 +545,54 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+.language-nav {
+  display: flex;
+  flex: none;
+  gap: 12px;
+  margin-left: 24px;
+  padding-left: 20px;
+  border-left: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.language-nav a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+.language-nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+:lang(zh-CN) .sidebar-tagline,
+:lang(zh-CN) .work-card h3 {
+  letter-spacing: 0;
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 18px 0;
+  }
+
+  .site-mark {
+    display: block;
+  }
+
+  .header-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .language-nav {
+    margin-left: auto;
+  }
+}
